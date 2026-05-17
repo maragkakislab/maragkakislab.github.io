@@ -1,0 +1,70 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $paginator := .Paginate .RegularPages }}
+
+{{- range $paginator.Pages }}
+{{- $page := . }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>{{- .Title }}</h2>
+    {{- with .Params.venue }}
+    <p class="post-description">{{ . }} &middot; {{ $page.Date.Format "January 2006" }}{{- with $page.Params.link }} &middot; <a href="{{ . }}" target="_blank" rel="noopener">PubMed</a>{{- end }}</p>
+    {{- end }}
+  </header>
+  {{- with .Params.authors }}
+  <div class="entry-content">
+    {{- $authors := . }}
+    {{- $count := len $authors }}
+    {{- if gt $count 6 }}
+    <p>{{ delimit (first 3 $authors) ", " }}, ... , {{ delimit (last 4 $authors) ", " }}</p>
+    {{- else }}
+    <p>{{ delimit $authors ", " }}</p>
+    {{- end }}
+  </div>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+      {{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+      {{- end }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

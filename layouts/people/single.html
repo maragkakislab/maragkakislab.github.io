@@ -1,0 +1,51 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <div class="people-single-header">
+      {{- if .Params.image }}
+      <img class="people-single-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+      <div class="people-single-info">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{- with .Params.role }}
+        <p class="post-description">{{ . }}</p>
+        {{- end }}
+        <div class="social-icons">
+          {{- with .Params.email }}
+          <a href="mailto:{{ . }}" title="Email">{{ partial "svg.html" (dict "name" "email") }}</a>
+          {{- end }}
+          {{- with .Params.website }}
+          <a href="{{ . }}" target="_blank" rel="noopener" title="Website">{{ partial "svg.html" (dict "name" "link") }}</a>
+          {{- end }}
+          {{- with .Params.google_scholar }}
+          <a href="{{ . }}" target="_blank" rel="noopener" title="Google Scholar">{{ partial "svg.html" (dict "name" "googlescholar") }}</a>
+          {{- end }}
+          {{- with .Params.twitter }}
+          <a href="{{ . }}" target="_blank" rel="noopener" title="Twitter">{{ partial "svg.html" (dict "name" "twitter") }}</a>
+          {{- end }}
+          {{- with .Params.bluesky }}
+          <a href="{{ . }}" target="_blank" rel="noopener" title="Bluesky">{{ partial "svg.html" (dict "name" "bluesky") }}</a>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}

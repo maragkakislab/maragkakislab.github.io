@@ -1,0 +1,63 @@
+<style>
+/* People list */
+.people-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.people-card .people-photo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.people-card .people-photo-placeholder {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--border, #e0e0e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--secondary, #aaa);
+}
+
+/* Publication links */
+.entry-footer a, .post-description a {
+  text-decoration: underline;
+}
+.publication-link {
+  margin-bottom: 1rem;
+}
+.publication-link a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* People single page */
+.people-single-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.people-single-photo {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.people-single-info h1 {
+  margin-top: 0;
+}
+
+/* Footer disclaimer */
+.footer-disclaimer {
+  font-size: 0.75rem;
+  color: var(--secondary, #aaa);
+}
+</style>

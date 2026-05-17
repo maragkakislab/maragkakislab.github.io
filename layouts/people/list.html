@@ -1,0 +1,77 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $allPages := .RegularPages | default .Pages }}
+{{- $current := where $allPages "Params.alumni" "ne" true }}
+{{- $alumni  := where $allPages "Params.alumni" true }}
+
+{{- range $current }}
+<article class="post-entry">
+  <div class="people-card">
+    {{- if .Params.image }}
+    <img class="people-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+    {{- else }}
+    <div class="people-photo-placeholder">👤</div>
+    {{- end }}
+    <div>
+      <header class="entry-header">
+        <h2>{{- .Title }}</h2>
+        {{- with .Params.role }}<p class="post-description">{{ . }}</p>{{- end }}
+      </header>
+      {{- if (ne (.Param "hideSummary") true) }}
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if $alumni }}
+<h2>Past Members</h2>
+
+{{- range $alumni }}
+<article class="post-entry">
+  <div class="people-card">
+    {{- if .Params.image }}
+    <img class="people-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+    {{- else }}
+    <div class="people-photo-placeholder">👤</div>
+    {{- end }}
+    <div>
+      <header class="entry-header">
+        <h2>{{- .Title }}</h2>
+        {{- with .Params.role }}<p class="post-description">{{ . }}</p>{{- end }}
+      </header>
+      {{- if (ne (.Param "hideSummary") true) }}
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

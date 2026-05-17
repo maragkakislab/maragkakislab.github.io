@@ -1,0 +1,35 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Params.venue }}
+    <div class="post-description">{{ . }} &middot; {{ $.Date.Format "January 2006" }}</div>
+    {{- end }}
+    {{- with .Params.authors }}
+    <div class="post-description">{{ delimit . ", " }}</div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- with .Params.link }}
+    <div class="publication-link">
+      <a href="{{ . }}" target="_blank" rel="noopener">View on PubMed →</a>
+    </div>
+    {{- end }}
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}
