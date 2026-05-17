@@ -24,7 +24,6 @@ buildExpired = false
   hidemeta = true
   mainSections = []
 
-  homeInfoParams.Title = 'Maragkakis Lab'
   homeInfoParams.Content = '''
 The lab investigates the high-dimensional regulation of gene expression to uncover the mechanistic basis of **aging physiology and disease**.
 Its work integrates experimental and computational approaches to study dynamic
