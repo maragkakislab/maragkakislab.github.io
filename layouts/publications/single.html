@@ -26,6 +26,14 @@
       <a href="{{ . }}" target="_blank" rel="noopener">View on PubMed →</a>
     </div>
     {{- end }}
+    {{- $tags := .GetTerms "tags" }}
+    {{- if $tags }}
+    <ul class="post-tags">
+      {{- range $tags }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
