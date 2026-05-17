@@ -75,6 +75,10 @@ increase human healthspan.
 [pagination]
   pagerSize = 20
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
