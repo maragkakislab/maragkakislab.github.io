@@ -1,7 +1,7 @@
 ---
-title: "Chris T Lee, PhD"
+title: "Christopher T Lee, PhD"
 role: "Bioinformatics Scientist"
-email: ""
+email: "leect@nih.gov"
 website: ""
 google_scholar: ""
 twitter: ""
@@ -14,8 +14,11 @@ alumni: false
 
 ## Bio
 
-Write a short bio here.
+Expert in statistical methodology, down to its derivation and history. 
 
 ## Education
 
-- Degree, University, Year
+- PhD, Biostatistics, University of Michigan, 2020
+- MS, Biostatisics, University of Michigan, 2015
+- BS, Mathematics, University of Maryland: College Park, 2012
+- BS, Cell Biology & Genetics, University of Maryland: College Park, 2012
