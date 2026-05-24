@@ -2,7 +2,7 @@
 title: "Christopher T Lee, PhD"
 role: "Bioinformatics Scientist"
 email: "leect@nih.gov"
-image: "/images/people/chris-lee-alt.jpeg"
+image: "/images/people/chris-lee.jpeg"
 summary: "Bioinformatics Scientist, Laboratory of Genetics and Genomics, NIA/NIH."
 weight: 32
 alumni: false
