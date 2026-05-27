@@ -37,6 +37,8 @@ native state of RNA in cells, and builds **machine learning tools** to model
 fundamental biological mechanisms and design combinatorial interventions to
 increase human healthspan.
 
+<img src="/images/research-directions.jpg" alt="Schematic illustrating the lab's research framework. Top: a pipeline showing how DNA is transcribed and RNA undergoes RNA Processing and Isoform Selection, mRNA Modifications (Epitranscriptome), Translation, and RNA Decay and Turnover — with outcomes including Functional Decline and Aging, Cellular Senescence and SASP, and Neurodegeneration and Disease. Bottom: the integrated approach combining Long-read Sequencing (full-length isoforms, modifications, kinetics), Single-cell and Spatial Transcriptomics (cell-type resolution in space and time), and Machine Learning and Predictive Modeling (mechanistic models, perturbation response). The overarching theme states: Aging is governed by coordinated, low-effect changes in RNA metabolism that reshape gene expression programs across cells and tissues, progressing From Descriptive Changes to Causal Mechanisms to Predictive Models to Therapeutic Interventions." style="width:100%;max-width:800px;display:block;margin:1.5em auto;">
+
 **This website is NOT an official website of the U.S. Government, HHS, NIH, or NIA. The views and content presented here do not necessarily represent the official views or policies of the U.S. Government, HHS, NIH, or NIA.**
 '''
 
