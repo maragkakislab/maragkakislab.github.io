@@ -3,7 +3,7 @@ title: "Srila Palanikumar"
 role: "Postbaccalaureate trainee"
 email: "srilakshmi.palanikumar@nih.gov"
 summary: "Studying isoform remodeling in the aging brain."
-image: "/images/people/srila-palanikumar.jpeg"
+image: "/images/people/srila-palanikumar.jpg"
 weight: 20
 alumni: false
 ---
