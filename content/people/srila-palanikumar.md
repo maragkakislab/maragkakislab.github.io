@@ -1,18 +1,19 @@
 ---
 title: "Srila Palanikumar"
 role: "Postbaccalaureate trainee"
-email: ""
-website: ""
-google_scholar: ""
-summary: ""
+email: "srilakshmi.palanikumar@nih.gov"
+summary: "Studying isoform remodeling in the aging brain."
+image: "/images/people/srila-palanikumar.jpeg"
 weight: 20
 alumni: false
 ---
 
 ## Bio
 
-Write a short bio here.
+Srila works on using long-read spatial transcriptomics to understand isoform-level differences between anatomical regions and across the lifespan of aging mice.
 
 ## Education
 
-- Degree, University, Year
+- **Ph.D. in Biomedical Engineering** - Purdue University, in progress
+- **M.D.** - Indiana University, in progress
+- **B.S. in Computational Biology** - University of Texas at Austin, 2025
