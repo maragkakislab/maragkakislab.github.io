@@ -6,7 +6,7 @@ website: ""
 google_scholar: "https://scholar.google.com/citations?hl=en&user=BaZNpw0AAAAJ"
 twitter: ""
 bluesky: ""
-image: "/images/people/abid-rehman.jpeg"
+image: "/images/people/abid-rehman.jpg"
 summary: ""
 weight: 10
 alumni: false
