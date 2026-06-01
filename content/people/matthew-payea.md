@@ -3,6 +3,7 @@ title: "Matthew J. Payea, PhD"
 role: "RNA biology and bioinformatics scientist"
 summary: "Studies cellular stress responses and senescence."
 weight: 30
+photo: static/images/people/matthew-payea.jpg
 ---
 
 ## Research
