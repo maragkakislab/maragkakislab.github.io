@@ -1,6 +1,8 @@
 ---
 title: "Matthew J. Payea, PhD"
 role: "RNA biology and bioinformatics scientist"
+email: matthew.payea@nih.gov
+google_scholar: https://scholar.google.com/citations?user=jam8xzsAAAAJ&hl=en
 summary: "Studies cellular stress responses and senescence."
 weight: 30
 photo: static/images/people/matthew-payea.jpg
