@@ -6,7 +6,7 @@ google_scholar: "https://scholar.google.com/citations?user=vZPpdNMAAAAJ&hl=en"
 twitter: "https://x.com/em_maragkakis"
 bluesky: "https://bsky.app/profile/manolis-maragkakis.bsky.social"
 summary: "Stadtman Tenure-Track Investigator, Laboratory of Genetics and Genomics, NIA/NIH."
-image: "/images/people/manolis-maragkakis.jpeg"
+image: "/images/people/manolis-maragkakis.jpg"
 weight: 1
 ---
 
