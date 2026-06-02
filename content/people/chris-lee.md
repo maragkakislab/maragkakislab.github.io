@@ -2,7 +2,7 @@
 title: "Christopher T Lee, PhD"
 role: "Bioinformatics Scientist"
 email: "chris.lee@nih.gov"
-image: "/images/people/chris-lee.jpeg"
+image: "/images/people/chris-lee.jpg"
 summary: "Studies RNA modifications and decay using direct RNA sequencing"
 weight: 32
 alumni: false
