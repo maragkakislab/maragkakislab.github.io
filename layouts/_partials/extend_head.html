@@ -1,4 +1,71 @@
 <style>
+/* ===================================================================
+   Accent color — deep blue drawn from the research-directions figure.
+   Used sparingly (links, active nav, buttons, tags, card hover) to add
+   character while keeping the design minimal.
+   =================================================================== */
+:root {
+  --accent: #1f4e9b;
+  --accent-hover: #15397a;
+  --accent-soft: rgba(31, 78, 155, 0.08);
+}
+:root[data-theme="dark"] {
+  --accent: #7da8ff;
+  --accent-hover: #a3c2ff;
+  --accent-soft: rgba(125, 168, 255, 0.12);
+}
+
+/* Links: prose, metadata, and publication buttons */
+.post-content a,
+.post-description a,
+.entry-footer a,
+.publication-link a,
+.pub-source-link {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+.post-content a:hover,
+.post-description a:hover,
+.entry-footer a:hover,
+.publication-link a:hover,
+.pub-source-link:hover {
+  color: var(--accent-hover);
+}
+
+/* Navigation: active item and hover */
+.menu .active {
+  color: var(--accent);
+}
+.menu a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* Tag chips */
+.post-tags a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Card hover: accent border only — no motion (cancels the theme's lift) */
+.post-entry {
+  transition: none;
+}
+.post-entry:hover,
+.post-entry:focus-within {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--accent);
+}
+
+/* Short accent rule under section headers (Publications, People, Research) */
+.page-header > h1 {
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--accent);
+}
+
 /* People list */
 .people-card {
   display: flex;
@@ -67,6 +134,21 @@
   color: var(--secondary, #aaa);
 }
 
+/* Home hero: enlarged headline (theme default is 34px).
+   Mobile size is set in the media query below. */
+.home-info .entry-header h1 {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+/* Lightly framed schematic. */
+.home-info .entry-content img {
+  border: 1px solid var(--tertiary);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
 /* Mobile */
 @media (max-width: 640px) {
   .post-title {
@@ -80,10 +162,10 @@
     line-height: 1.3;
   }
 
-  /* Home page title */
+  /* Home hero headline */
   .first-entry .entry-header h1 {
-    font-size: 1.6rem;
-    line-height: 1.3;
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   /* Individual entry titles in lists */
@@ -110,26 +192,6 @@
 
   .people-single-info h1 {
     font-size: 1.4rem;
-  }
-}
-
-/* Very small phones, e.g. iPhone 13 mini (375px) */
-@media (max-width: 400px) {
-  .page-header h1,
-  .post-title {
-    font-size: 1.4rem;
-  }
-
-  .first-entry .entry-header h1 {
-    font-size: 1.4rem;
-  }
-
-  .entry-header h2 {
-    font-size: 1.15rem;
-  }
-
-  .people-single-info h1 {
-    font-size: 1.3rem;
   }
 }
 </style>

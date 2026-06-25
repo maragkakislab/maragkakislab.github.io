@@ -24,6 +24,8 @@ buildExpired = false
   hidemeta = true
   mainSections = []
 
+  homeInfoParams.Title = 'Decoding the RNA basis of aging and disease'
+
   homeInfoParams.Content = '''
 The Maragkakis lab investigates the high-dimensional regulation of gene expression to uncover the mechanistic basis of **aging physiology and disease**.
 Its work integrates experimental and computational approaches to study dynamic
