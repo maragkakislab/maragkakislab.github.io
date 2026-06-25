@@ -29,6 +29,12 @@
 .entry-footer a, .post-description a {
   text-decoration: underline;
 }
+/* Lift the source link above the card-wide overlay link (.entry-link)
+   so it is individually clickable in the publication list view. */
+.pub-source-link {
+  position: relative;
+  z-index: 1;
+}
 .publication-link {
   margin-bottom: 1rem;
 }
