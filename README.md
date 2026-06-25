@@ -14,7 +14,9 @@ Files: `content/people/<name>.md`
 
 To add a new person, copy an existing file:
 
-Add the photo as a JPEG or PNG to `static/images/people/`. The filename should match the `image` field in the `<name>.md`. Recommended size: 400×400 px, cropped to a square.
+Add the photo as a JPEG or PNG to `assets/images/people/`. The filename should match the `image` field in the `<name>.md` (e.g. `image: "/images/people/jane-doe.jpg"`).
+
+Photos are resized and optimized automatically at build time, so you can commit the high-resolution original — there's no need to shrink it first. Just use a roughly **square** image at least **320×320 px** (larger is fine and recommended, so it stays crisp on high-resolution displays). The build generates the small thumbnails used on the site.
 
 ### Publications
 
@@ -22,7 +24,7 @@ Files: `content/publications/<year>-<short-title>.md`
 
 To add a new publication, copy an existing one:
 
-The `link` field is displayed as a "View on PubMed" button at the bottom of the page.
+The `link` field is displayed as a "View full text" button at the bottom of the page (it can point to PubMed, a DOI, bioRxiv, or any publisher URL).
 
 ---
 

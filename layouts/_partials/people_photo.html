@@ -1,0 +1,20 @@
+{{- /*
+  Renders an optimized, responsive person photo using Hugo's image pipeline.
+  Source images live in assets/images/people/ and are resized at build time,
+  so high-resolution originals can be committed without bloating page weight.
+
+  Params (passed as a dict):
+    src   - image path from the page's `image` frontmatter (e.g. /images/people/jane.jpg)
+    box   - displayed square size in CSS pixels (80 for list, 160 for single page)
+    class - CSS class to apply to the <img>
+    alt   - alt text
+*/ -}}
+{{- $path := strings.TrimPrefix "/" .src -}}
+{{- with resources.Get $path -}}
+  {{- $box := $.box -}}
+  {{- $1x := .Fill (printf "%dx%d center" $box $box) -}}
+  {{- $2x := .Fill (printf "%dx%d center" (mul $box 2) (mul $box 2)) -}}
+  <img class="{{ $.class }}" src="{{ $1x.RelPermalink }}" srcset="{{ $1x.RelPermalink }} 1x, {{ $2x.RelPermalink }} 2x" width="{{ $box }}" height="{{ $box }}" alt="{{ $.alt }}" loading="lazy">
+{{- else -}}
+  {{- warnf "people_photo: image not found in assets: %s" $path -}}
+{{- end -}}

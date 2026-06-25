@@ -26,7 +26,7 @@
 <article class="post-entry">
   <div class="people-card">
     {{- if .Params.image }}
-    <img class="people-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+    {{- partial "people_photo.html" (dict "src" .Params.image "box" 80 "class" "people-photo" "alt" .Title) }}
     {{- else }}
     <div class="people-photo-placeholder">👤</div>
     {{- end }}
@@ -53,7 +53,7 @@
 <article class="post-entry">
   <div class="people-card">
     {{- if .Params.image }}
-    <img class="people-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+    {{- partial "people_photo.html" (dict "src" .Params.image "box" 80 "class" "people-photo" "alt" .Title) }}
     {{- else }}
     <div class="people-photo-placeholder">👤</div>
     {{- end }}

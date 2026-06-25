@@ -5,7 +5,7 @@
     {{ partial "breadcrumbs.html" . }}
     <div class="people-single-header">
       {{- if .Params.image }}
-      <img class="people-single-photo" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+      {{- partial "people_photo.html" (dict "src" .Params.image "box" 160 "class" "people-single-photo" "alt" .Title) }}
       {{- end }}
       <div class="people-single-info">
         <h1 class="post-title">{{ .Title }}</h1>
