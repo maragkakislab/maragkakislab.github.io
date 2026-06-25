@@ -1,6 +1,6 @@
 ---
 title: "Transcript-guided targeted cell enrichment for scalable single-nucleus RNA sequencing"
-date: 2025-12-11
+date: 2026-03-11
 authors: ["Liao A", "Zhang Z", "Sziraki A", "Abdulraouf A", "Rehman A", "Xu Z", "Lu Z", "Jiang W", "Arya A", "Lee J", "Maragkakis M", "Zhou W", "Cao J"]
 venue: "Cell Genomics"
 link: "https://pubmed.ncbi.nlm.nih.gov/41386229/"
