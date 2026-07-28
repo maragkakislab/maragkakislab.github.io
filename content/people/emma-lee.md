@@ -7,7 +7,7 @@ website: ""
 google_scholar: ""
 twitter: ""
 bluesky: ""
-image: ""
+image: "/images/people/emma-lee.jpg"
 summary: ""
 weight: 100
 alumni: false
