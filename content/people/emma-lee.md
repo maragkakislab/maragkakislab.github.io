@@ -15,8 +15,8 @@ alumni: false
 
 ## Bio
 
-Write a short bio here.
+Emma is researching RNA isoforms in senescence. She is interested in the spatial coordination of transcription and RNA processing in aging.
 
 ## Education
 
-- Degree, University, Year
+- B.Sc. in Computer Science and Biology, MIT, 2025
