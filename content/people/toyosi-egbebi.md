@@ -19,4 +19,4 @@ Write a short bio here.
 
 ## Education
 
-- Degree, University, Year
+- **BA in Biomedical Engineering and Computer Science** – Harvard College, 2026
