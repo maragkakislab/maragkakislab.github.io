@@ -1,5 +1,5 @@
 ---
-title: "Toyoshi Egbebi"
+title: "Toyosi Egbebi"
 draft: true
 role: "Postbaccalaureate trainee"
 email: ""
