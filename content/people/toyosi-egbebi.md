@@ -7,7 +7,7 @@ website: ""
 google_scholar: ""
 twitter: ""
 bluesky: ""
-image: ""
+image: "/images/people/toyosi-egbebi.png"
 summary: ""
 weight: 100
 alumni: false
