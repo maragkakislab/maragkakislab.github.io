@@ -2,7 +2,7 @@
 title: "Toyosi Egbebi"
 draft: true
 role: "Postbaccalaureate trainee"
-email: ""
+email: "oluwatoyosi.egbebi@nih.gov"
 website: ""
 google_scholar: ""
 twitter: ""
@@ -19,4 +19,4 @@ Write a short bio here.
 
 ## Education
 
-- **BA in Biomedical Engineering and Computer Science** – Harvard College, 2026
+- **B.A. in Biomedical Engineering and Computer Science** – Harvard College, 2026
