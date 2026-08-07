@@ -8,14 +8,14 @@ google_scholar: ""
 twitter: ""
 bluesky: ""
 image: "/images/people/toyosi-egbebi.png"
-summary: ""
+summary: "Studies RNA isoforms with long-read sequencing"
 weight: 100
 alumni: false
 ---
 
 ## Bio
 
-Write a short bio here.
+Toyosi studies age-dependent expression of RNA isoforms. She has interests in combining experimental genomics with computational biology, and her prior work investigated the accuracy of machine learning-based protein structure prediction models in varying conditions.
 
 ## Education
 
