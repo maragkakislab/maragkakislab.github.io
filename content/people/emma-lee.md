@@ -2,7 +2,7 @@
 title: "Emma Lee"
 draft: true
 role: "Postbaccalaureate trainee"
-email: ""
+email: "leeemr@nih.gov"
 website: ""
 google_scholar: ""
 twitter: ""
@@ -15,7 +15,7 @@ alumni: false
 
 ## Bio
 
-Emma is researching RNA isoforms in senescence. She is interested in the spatial coordination of transcription and RNA processing in aging.
+Emma is researching RNA isoform diversity in senescence. She is interested in nuclear architecture and the spatial coordination of transcription and RNA processing events.
 
 ## Education
 
