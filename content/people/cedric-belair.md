@@ -6,6 +6,7 @@ summary: "Working on RNA metabolism and transcriptome dynamics using long-read R
 google_scholar: "https://scholar.google.com/citations?user=QREvf38AAAAJ&hl=en&oi=ao"
 image: "/images/people/cedric-belair.jpg"
 weight: 31
+alumni: false
 ---
 
 ## Research

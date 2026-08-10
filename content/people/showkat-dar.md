@@ -2,7 +2,7 @@
 title: "Showkat A. Dar, PhD"
 role: "Postdoctoral Fellow"
 summary: "Studies RNA decay and stress granule biology using direct RNA sequencing."
-weight: 11
+weight: 98
 alumni: true
 ---
 

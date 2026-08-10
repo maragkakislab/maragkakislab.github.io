@@ -1,16 +1,18 @@
 ---
 title: "Srila Palanikumar"
 role: "Postbaccalaureate trainee"
-email: "srilakshmi.palanikumar@nih.gov"
+email: ""
 summary: "Studying isoform remodeling in the aging brain."
 image: "/images/people/srila-palanikumar.jpg"
-weight: 20
-alumni: false
+weight: 97
+alumni: true
 ---
 
 ## Bio
 
-Srila works on using long-read spatial transcriptomics to understand isoform-level differences between anatomical regions and across the lifespan of aging mice.
+Srila works on using long-read spatial transcriptomics to understand
+isoform-level differences between anatomical regions and across the lifespan of
+aging mice.
 
 ## Education
 

@@ -2,7 +2,7 @@
 title: "Sulochan Malla, PhD"
 role: "Postdoctoral Fellow"
 summary: "Working on long-read sequencing and brain aging."
-weight: 13
+weight: 100
 alumni: true
 ---
 

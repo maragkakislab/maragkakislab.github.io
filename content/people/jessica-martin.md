@@ -2,7 +2,7 @@
 title: "Jessica Martin"
 role: "Postbaccalaureate trainee"
 summary: "Machine learning approaches for RNA sequencing analysis."
-weight: 14
+weight: 99
 alumni: true
 ---
 
