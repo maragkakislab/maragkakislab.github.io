@@ -1,5 +1,6 @@
 ---
 title: "Cedric Belair, PhD"
+short_name: "Cedric"
 role: "RNA biology scientist"
 email: "cedric.belair@nih.gov"
 summary: "Working on RNA metabolism and transcriptome dynamics using long-read RNA sequencing."

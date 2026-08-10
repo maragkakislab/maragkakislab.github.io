@@ -1,5 +1,6 @@
 ---
 title: 'Emmanouil "Manolis" Maragkakis, PhD'
+short_name: "Manolis"
 role: "Principal Investigator"
 email: "maragkakise@nih.gov"
 google_scholar: "https://scholar.google.com/citations?user=vZPpdNMAAAAJ&hl=en"

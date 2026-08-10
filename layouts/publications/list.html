@@ -21,27 +21,7 @@
 {{- $paginator := .Paginate .RegularPages }}
 
 {{- range $paginator.Pages }}
-{{- $page := . }}
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>{{- .Title }}</h2>
-    {{- with .Params.venue }}
-    <p class="post-description">{{ . }} &middot; {{ $page.Date.Format "January 2006" }}{{- with $page.Params.link }} &middot; <a class="pub-source-link" href="{{ . }}" target="_blank" rel="noopener">Full text</a>{{- end }}</p>
-    {{- end }}
-  </header>
-  {{- with .Params.authors }}
-  <div class="entry-content">
-    {{- $authors := . }}
-    {{- $count := len $authors }}
-    {{- if gt $count 6 }}
-    <p>{{ delimit (first 3 $authors) ", " }}, ... , {{ delimit (last 4 $authors) ", " }}</p>
-    {{- else }}
-    <p>{{ delimit $authors ", " }}</p>
-    {{- end }}
-  </div>
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</article>
+{{- partial "publication_card.html" (dict "page" .) }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

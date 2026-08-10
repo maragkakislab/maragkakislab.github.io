@@ -1,5 +1,6 @@
 ---
 title: "Toyosi Egbebi"
+short_name: "Toyosi"
 role: "Postbaccalaureate trainee"
 email: "oluwatoyosi.egbebi@nih.gov"
 website: ""

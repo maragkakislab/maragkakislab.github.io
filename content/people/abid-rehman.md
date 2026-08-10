@@ -1,5 +1,6 @@
 ---
 title: "Abid Rehman"
+short_name: "Abid"
 role: "PhD Student"
 email: "abid.rehman@nih.gov"
 website: ""

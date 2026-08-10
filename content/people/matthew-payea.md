@@ -1,5 +1,6 @@
 ---
 title: "Matthew J. Payea, PhD"
+short_name: "Matt"
 role: "RNA biology and bioinformatics scientist"
 email: matthew.payea@nih.gov
 google_scholar: https://scholar.google.com/citations?user=jam8xzsAAAAJ&hl=en

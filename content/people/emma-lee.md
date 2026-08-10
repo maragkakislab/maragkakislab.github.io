@@ -1,5 +1,6 @@
 ---
 title: "Emma Lee"
+short_name: "Emma"
 role: "Postbaccalaureate trainee"
 email: "leeemr@nih.gov"
 website: ""

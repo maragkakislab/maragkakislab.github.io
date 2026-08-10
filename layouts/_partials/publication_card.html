@@ -1,0 +1,26 @@
+{{- /*
+  Renders a publication card: title, venue/date (+ full-text link if set),
+  and a truncated author list. Shared by the Publications list and the
+  home page's recent-publications teaser.
+
+  Params (passed as a dict):
+    page       - the publication page
+    extraClass - optional extra class(es) on the <article>
+*/ -}}
+{{- $page := .page -}}
+<article class="post-entry{{ with .extraClass }} {{ . }}{{ end }}">
+  <header class="entry-header">
+    <h2>{{ $page.Title }}</h2>
+    {{- with $page.Params.venue }}
+    <p class="post-description">{{ . }} &middot; {{ $page.Date.Format "January 2006" }}{{- with $page.Params.link }} &middot; <a class="pub-source-link" href="{{ . }}" target="_blank" rel="noopener">Full text</a>{{- end }}</p>
+    {{- end }}
+  </header>
+  {{- with $page.Params.authors }}
+  {{- $authors := . }}
+  {{- $count := len $authors }}
+  <div class="entry-content">
+    <p>{{ if gt $count 6 }}{{ delimit (first 3 $authors) ", " }}, ... , {{ delimit (last 4 $authors) ", " }}{{ else }}{{ delimit $authors ", " }}{{ end }}</p>
+  </div>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ $page.Title | plainify }}" href="{{ $page.Permalink }}"></a>
+</article>

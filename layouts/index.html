@@ -1,0 +1,53 @@
+{{- define "main" }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- if site.Params.homeInfoParams }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- with site.GetPage "/people" }}
+{{- $current := where .RegularPages "Params.alumni" "ne" true }}
+{{- $current = sort $current "Params.weight" }}
+{{- if $current }}
+<section class="home-section home-members-section">
+  <h2 class="home-section-title">Meet the Team</h2>
+  <div class="home-members-grid">
+    {{- range $current }}
+    <a class="home-member" href="{{ .Permalink }}" title="{{ .Title }}">
+      {{- if .Params.image }}
+      {{- partial "people_photo.html" (dict "src" .Params.image "box" 56 "class" "home-member-photo" "alt" .Title) }}
+      {{- else }}
+      <div class="home-member-photo-placeholder">👤</div>
+      {{- end }}
+      <span class="home-member-name">{{ .Params.short_name | default (index (split .Title " ") 0) }}</span>
+    </a>
+    {{- end }}
+  </div>
+  <a class="home-section-more" href="{{ .Permalink }}">Meet the whole team →</a>
+</section>
+{{- end }}
+{{- end }}
+
+{{- with site.GetPage "/publications" }}
+{{- $recent := first 3 .RegularPages }}
+{{- if $recent }}
+<section class="home-section home-publications-section">
+  <h2 class="home-section-title">Recent Publications</h2>
+  <div class="home-publications-list">
+    {{- range $recent }}
+    {{- partial "publication_card.html" (dict "page" . "extraClass" "home-publication-card") }}
+    {{- end }}
+  </div>
+  <a class="home-section-more" href="{{ .Permalink }}">View all publications →</a>
+</section>
+{{- end }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

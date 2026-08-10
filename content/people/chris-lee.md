@@ -1,5 +1,6 @@
 ---
 title: "Christopher T Lee, PhD"
+short_name: "Chris"
 role: "Bioinformatics Scientist"
 email: "chris.lee@nih.gov"
 image: "/images/people/chris-lee.jpg"
